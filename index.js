@@ -1,4 +1,4 @@
-const cron = require('node-cron');
-const config = require('config');
+const QA = require('./lib/qa');
 
-console.log(config);
+const qa = new QA();
+qa.start();

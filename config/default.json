@@ -1,5 +1,31 @@
 {
 	"timezone": "Asia/Hong_Kong",
-	"send_message": "",
-	"check_messages": ""
+	"send_message": "*/5 * * * * *",
+	"check_messages": "*/5 * * * * *",
+	"devices": [
+		{
+			"barcode": "860862024903876",
+			"owner": []
+		},
+		{
+			"barcode": "860862020587624",
+			"owner": []
+		},
+		{
+			"barcode": "860862024907133",
+			"owner": []
+		}
+	],
+	"min_battery_lvl": 10,
+	"message_user": 1094,
+	"message_content": {
+		"en_US": {
+			"title": "Push Message QA - {{date}}",
+			"content": "Checking push message delivery.",
+			"image_url": "http://d2q9jzpy3atjau.cloudfront.net/upload/img/1489004738_081031_scene01_02.jpg",
+			"image_top": "",
+			"button_text": "Home",
+			"button_url": "home:"
+		}
+	}
 }

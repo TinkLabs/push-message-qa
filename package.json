@@ -5,19 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "MYSQL_DB=\"backend2\" MYSQL_USER=\"root\" MYSQL_PASSWORD=\"abc123\" MYSQL_HOST=\"localhost\" nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "config": "^1.26.2",
     "eslint": "^4.4.1",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.7.0",
-    "node-cron": "^1.2.1",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "node-models": "git+ssh://git@github.com:TinkLabs/node-models.git"
+    "node-models": "git+ssh://git@github.com:TinkLabs/node-models.git",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "config": "^1.26.2",
+		"cron": "^1.2.1",
+		"handlebars": "^4.0.10"
   }
 }
